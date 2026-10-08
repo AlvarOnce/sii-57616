@@ -164,6 +164,9 @@ void CMundo::OnKeyboardDown(unsigned char key, int x, int y)
 
 void CMundo::Init()
 {
+//que la bola se mueva
+	
+
 	Plano p;
 //pared inferior
 	p.x1=-7;p.y1=-5;
