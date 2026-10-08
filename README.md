@@ -20,4 +20,4 @@ Juego de tenis para dos jugadores en C++ con OpenGL y GLUT.
 
 ## Autor
 
-Tu nombre - matrícula 57616
+Álvaro Pérez Ruano - 57616
