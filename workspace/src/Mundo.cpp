@@ -158,6 +158,15 @@ void CMundo::OnTimer(int value)
 		sprintf(buffer, "Jugador 1 marca 1 punto, lleva un total de %d puntos.", puntos1);
 		write(fd, buffer, sizeof(buffer));
 	}
+	
+	
+	// Fin de la partida: algún jugador llega a 3 puntos
+	if (puntos1 >= 3 || puntos2 >= 3) {
+		char buffer[1024];
+		sprintf(buffer, "Fin de la partida: gana el jugador %d.", puntos1 >= 3 ? 1 : 2);
+		write(fd, buffer, sizeof(buffer));
+		exit(0);
+	}
 
 }
 
